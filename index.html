@@ -1,0 +1,608 @@
+ <!doctype html>
+<html >
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="format-detection" content="telephone=no" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta content="black" name="apple-mobile-web-app-status-bar-style">
+<meta name="x5-fullscreen" content="true">
+<meta name="full-screen" content="yes">
+
+<link href="css/bootstrap.min.css" type="text/css" rel="stylesheet">
+<link href="font/iconfont.css" type="text/css" rel="stylesheet">
+<link href="css/style.css" type="text/css" rel="stylesheet">
+<link href="css/common.css" rel="stylesheet" type="text/css">
+<script src="js/jquery-1.9.1.min.js" type="text/javascript" ></script>
+<script src="js/layer_mobile/layer.js" type="text/javascript"></script>
+<script src="js/bootstrap.min.js" type="text/javascript"></script>
+<script src="js/common.js" type="text/javascript"></script>
+<script  type="text/javascript" src="js/TouchSlide.1.1.js"></script>
+<script  type="text/javascript" src="js/jquery.cookie.js"></script>
+<script  type="text/javascript" src="js/jquery.nicescroll.js"></script>
+<title>首页</title>
+</head>
+<body class="background-w">
+<!--herder top-->
+<header class="herder-style clearfix">
+<!--navbar-->
+	<div class="herder-top">
+	<div class="return"><a href="javascript :history.back(-1)"><i class="iconfont icon-fanhui"></i></a></div>
+		<div class="title_name align">店铺首页 </div>
+		<div class="herder-operating">
+			<div class="Language-style dropdown">
+			 <a  class="relative clearfix" href="#" id="Language" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+		     <span class="name" ><i class="iconfont icon-duoyuyan"></i><b>Language</b></span>
+		<!--<i class="iconfont icon-jiantouarrow492 jiantou zk"></i>
+ <i class="iconfont icon-jiantouarrow486 jiantou yc"></i>-->
+			</a>
+			 <div class="dropdown-menu Language-select" aria-labelledby="dLabel" data-thumb-target="temp">
+			 <h4 class="align padding5">Please select a language.</h4>
+			 <ul class="language_list">
+			 	<li><a href="#"><i class="iconfont icon-icon-test"></i>日本語</a></li>
+			 	<li><a href="#">中文简</a></li>
+			 	<li><a href="#">中文繁</a></li>
+			 	<li><a href="#">English</a></li>
+			 	<li><a href="#">한국의</a></li>
+			 </ul>
+			 </div>
+			</div>
+			<div class="operating-style dropdown"  >
+			<a class="iconfont icon-101 caozuo"  href="#" id="caozuo" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></a>
+		     <ul class="dropdown-menu" aria-labelledby="dLabel" data-thumb-target="temp">
+		      <li><a href="javascript:" onclick="share()"><i class="iconfont icon-fenxiang2"></i>分享</a></li>
+			  <li><a href="#"><i class="iconfont icon-setting"></i>设定</a></li>
+		     </ul>
+	     </div>
+	    </div>
+	 </div>
+	<!--menu-->
+	<div class="herder-menu">
+		<ul>
+			<li class="home active"><a href="index.html" class="relative"><i class="iconfont icon-shop2"></i><span class="name">首页</span></a></li>
+			<li class="cart"><a href="cart.html" class="relative"><i class="iconfont icon-gouwuche1"><b class="cart-mark"></b></i><span class="name">购物车</span></a></li>
+			<li class="order"><a href="Order.html"><i class="iconfont icon-dingdan"></i><span class="name">订单</span></a></li>
+			<li class="pay"><a href="javascript:void(0)" onClick="Paybtn('Pay.html')"><i class="iconfont icon-yinxingqia-copy"></i><span class="name">结算</span></a></li>
+			<li class="user"><a href="javascript:void(0)" onClick="qita()"><i class="iconfont icon-yonghu"></i><span class="name">用户</span></a></li>
+		</ul>
+	</div>
+</header>
+<!--Content area-->
+<section class="container background-w">
+	 <div class="Stores-info box">
+	 	<div class="Stores-img box-flex4"><div class="Stores-frame"><img src="images/cz.jpg" width="100%"></div></div>
+	 	<div class="box-flex6 padding5 Introduce">
+	 		<h4>第六食堂</h4>
+	 		<h5>欢迎来到xx大学第六食堂就餐，请先下单后取号等单，共创食堂文明用餐环境</h5>
+	 	</div>
+	 </div>
+<!--Left column area-->
+   <div class="switch_btn" id="switch_btn">类别</div>
+	<div class="column-style" id="column-style">
+		<ul class="column-list">
+			<li class="column-level">
+			<ul class="column-Lower">
+				<li><a href="#" class="column-name">名称</a></li>
+			</ul>
+			</li>
+			<li class="column-level">
+		
+			<ul class="column-Lower">
+				<li><a href="#" class="column-name">分类名称</a></li>
+				<li><a href="#" class="column-name">分类名称</a></li>
+				<li><a href="#" class="column-name">分类名称</a></li>
+				<li><a href="#" class="column-name">分类名称</a></li>
+				<li><a href="#" class="column-name">分类名称</a></li>
+			</ul>
+			</li>
+			<li class="column-level">
+		
+			<ul class="column-Lower">
+				<li><a href="#" class="column-name">分类名称</a></li>
+				<li><a href="#" class="column-name">分类名称</a></li>
+				<li><a href="#" class="column-name">分类名称</a></li>
+				<li><a href="#" class="column-name">分类名称</a></li>
+				<li><a href="#" class="column-name">分类名称</a></li>
+			</ul>
+			</li>
+				<li class="column-level">
+		
+			<ul class="column-Lower">
+				<li><a href="#" class="column-name">分类名称</a></li>
+				<li><a href="#" class="column-name">分类名称</a></li>
+				<li><a href="#" class="column-name">分类名称</a></li>
+				<li><a href="#" class="column-name">分类名称</a></li>
+				<li><a href="#" class="column-name">分类名称</a></li>
+			</ul>
+			</li>
+				<li class="column-level">
+		
+			<ul class="column-Lower">
+				<li><a href="#" class="column-name">分类名称</a></li>
+				<li><a href="#" class="column-name">分类名称</a></li>
+				<li><a href="#" class="column-name">分类名称</a></li>
+				<li><a href="#" class="column-name">分类名称</a></li>
+				<li><a href="#" class="column-name">分类名称</a></li>
+			</ul>
+			</li>
+		</ul>
+	</div>
+	<!--Right product list-->
+	<div class="product-style">
+		<ul class="product-list padding5 clearfix">
+			<li class="clearfix relative product_name">
+				<a href="javascript:void()" class="product-img" onClick="product_detailed(this,'12343')"><img src="images/p-1.jpg" alt=""></a>
+				<div class="product-xinxi">
+				   <div class="title-name"><a href="javascript:void()" class="" onClick="product_detailed(this,'12343')">毛氏红烧肉</a></div>
+					
+					<div class="operating">
+						<span class="price">¥<b>6</b></span>
+						<div class="Quantity">  
+								 <button class="minus" style="display: inline-block;">  
+									<em class="iconfont icon-jian"></em> 
+								 </button>  
+								   <input type="text" class="result" value="0" disabled="false"> 
+								  <button class="add">  
+									 <em class="iconfont icon-jia"></em> 
+								 </button>  
+							 </div>
+					
+					</div>
+				</div>
+			</li>
+				<li class="clearfix relative product_name">
+				<a href="#" class="product-img"><img src="images/p-2.jpg" alt=""></a>
+				<div class="product-xinxi">
+				
+					<a href="#" class="title-name">粉蒸肉</a>
+					<div class="operating">
+						<span class="price">¥<b>6</b></span>
+						<div class="Quantity">  
+								 <button class="minus" style="display: inline-block;">  
+									<em class="iconfont icon-jian"></em> 
+								 </button>  
+								   <input type="text" class="result" value="0" disabled="false"> 
+								  <button class="add">  
+									 <em class="iconfont icon-jia"></em> 
+								 </button>  
+							 </div>
+					
+					</div>
+				</div>
+			</li>
+					<li class="clearfix relative product_name">
+				<a href="#" class="product-img"><img src="images/p-4.jpg" alt=""></a>
+				<div class="product-xinxi">
+				
+					<a href="#" class="title-name">鱼香肉丝</a>
+					<div class="operating">
+						<span class="price">¥<b>6</b></span>
+						<div class="Quantity">  
+								 <button class="minus" style="display: inline-block;">  
+									<em class="iconfont icon-jian"></em> 
+								 </button>  
+								   <input type="text" class="result" value="0" disabled="false"> 
+								  <button class="add">  
+									 <em class="iconfont icon-jia"></em> 
+								 </button>  
+							 </div>
+					
+					</div>
+				</div>
+			</li>
+			<li class="clearfix relative product_name">
+				<a href="#" class="product-img"><img src="images/p-4.jpg" alt=""></a>
+				<div class="product-xinxi">
+				
+					<a href="#" class="title-name">炝莲白</a>
+					<div class="operating">
+						<span class="price">¥<b>2</b></span>
+						<div class="Quantity">  
+								 <button class="minus" style="display: inline-block;">  
+									<em class="iconfont icon-jian"></em> 
+								 </button>  
+								   <input type="text" class="result" value="0" disabled="false"> 
+								  <button class="add">  
+									 <em class="iconfont icon-jia"></em> 
+								 </button>  
+							 </div>
+						
+					</div>
+				</div>
+			</li>
+			<li class="clearfix relative product_name">
+				<a href="#" class="product-img"><img src="images/p-4.jpg" alt=""></a>
+				<div class="product-xinxi">
+				
+					<a href="#" class="title-name">卤鸡腿</a>
+					<div class="operating">
+						<span class="price">¥<b>5</b></span>
+						<div class="Quantity">  
+								 <button class="minus" style="display: inline-block;">  
+									<em class="iconfont icon-jian"></em> 
+								 </button>  
+								   <input type="text" class="result" value="0" disabled="false"> 
+								  <button class="add">  
+									 <em class="iconfont icon-jia"></em> 
+								 </button>  
+							 </div>
+					</div>
+				</div>
+			</li>
+			<li class="clearfix relative product_name">
+				<a href="#" class="product-img"><img src="images/p-4.jpg" alt=""></a>
+				<div class="product-xinxi">
+				
+					<a href="#" class="title-name">麻辣小龙虾</a>
+					<div class="operating">
+						<span class="price">¥<b>6</b></span>
+						<div class="Quantity">  
+								 <button class="minus" style="display: inline-block;">  
+									<em class="iconfont icon-jianqu"></em> 
+								 </button>  
+								   <input type="text" class="result" value="0" disabled="false"> 
+								  <button class="add">  
+									 <em class="iconfont icon-jia1"></em> 
+								 </button>  
+						</div>
+					</div>
+				</div>
+			</li>
+			<li class="clearfix relative product_name">
+				<a href="#" class="product-img"><img src="images/no-picture.jpg" alt=""></a>
+				<div class="product-xinxi">
+				
+					<a href="#" class="title-name">宫保鸡丁</a>
+					<div class="operating">
+						<span class="price">¥<b>6</b></span>
+						<div class="Quantity">  
+								 <button class="minus" style="display: inline-block;">  
+									<em class="iconfont icon-jianqu"></em> 
+								 </button>  
+								   <input type="text" class="result" value="0" disabled="false"> 
+								  <button class="add">  
+									 <em class="iconfont icon-jia1"></em> 
+								 </button>  
+						
+						</div>
+					</div>
+				</div>
+			</li>
+				<li class="clearfix relative product_name">
+				<a href="#" class="product-img"><img src="images/no-picture.jpg" alt=""></a>
+				<div class="product-xinxi">
+				
+					<a href="#" class="title-name">土豆丝</a>
+					<div class="operating">
+						<span class="price">¥<b>2</b></span>
+						<div class="Quantity">  
+								 <button class="minus" style="display: inline-block;">  
+									<em class="iconfont icon-jianqu"></em> 
+								 </button>  
+								   <input type="text" class="result" value="0" disabled="false"> 
+								  <button class="add">  
+									 <em class="iconfont icon-jia1"></em> 
+								 </button>  
+						
+						</div>
+					</div>
+				</div>
+			</li>
+				<li class="clearfix relative product_name">
+				<a href="#" class="product-img"><img src="images/no-picture.jpg" alt=""></a>
+				<div class="product-xinxi">
+				
+					<a href="#" class="title-name">蚝油生菜</a>
+					<div class="operating">
+						<span class="price">¥<b>2</b></span>
+						<div class="Quantity">  
+								 <button class="minus" style="display: inline-block;">  
+									<em class="iconfont icon-jianqu"></em> 
+								 </button>  
+								   <input type="text" class="result" value="0" disabled="false"> 
+								  <button class="add">  
+									 <em class="iconfont icon-jia1"></em> 
+								 </button>  
+						
+						</div>
+					</div>
+				</div>
+			</li>
+				<li class="clearfix relative product_name">
+				<a href="#" class="product-img"><img src="images/no-picture.jpg" alt=""></a>
+				<div class="product-xinxi">
+				
+					<a href="#" class="title-name">水煮肉片</a>
+					<div class="operating">
+						<span class="price">¥<b>6</b></span>
+						<div class="Quantity">  
+								 <button class="minus" style="display: inline-block;">  
+									<em class="iconfont icon-jianqu"></em> 
+								 </button>  
+								   <input type="text" class="result" value="0" disabled="false"> 
+								  <button class="add">  
+									 <em class="iconfont icon-jia1"></em> 
+								 </button>  
+						
+						</div>
+					</div>
+				</div>
+			</li>
+		</ul>
+	</div>
+</section>	
+<!--Prompt box-->
+  <div id="Prompt" style="display: none">
+	  <!--<div class="Prompt-cover"></div>	-->		
+		<div class="Prompt-box"><a href="javascript:()" onClick="Prompt_click()">请输入认证信息</a></div>
+		
+ </div>
+</body>
+</html>
+<script>
+//Adaptive style attributes
+function heightvalue(){ 
+$('.switch_btn').css('margin-top',-$("#switch_btn").height()/2);
+ $('.column-style').css({'height':$(window).height()-$(".herder-style").height(),"top":$(".herder-style").height()});
+ $('.product-style').css('height',$(window).height()-$(".herder-style").height());
+  }
+  heightvalue()
+  $(window).resize(function(){
+   heightvalue()
+  })
+//
+$(window).scroll(function(){
+  if($(window).scrollTop() >= $(".herder-style").height()){
+	$('.column-style').css('position','fixed');
+	$('.product-style').css('margin-left',$('.column-style').width());
+  }else {
+	$('.column-style').css('position','');
+	$('.product-style').css('margin-left','');
+  };
+});	
+	 $('.column-Lower li').on('click',function(){
+		 $(this).each(function(){
+			 $(this).addClass('active'); 
+			 $(this).siblings('li').removeClass('active');
+			// $(this).parent().siblings('li').removeClass('active');
+		 },function(){		 
+			 // 删除其他兄弟元素的样式
+          	 $(this).siblings('li').removeClass('active');
+		 })
+       
+         
+		$("#column-style").animate({width: '0'},300);
+		$("#switch_btn").animate({left: '0'},300);
+		$("#switch_btn").css({'background-position':'0px 0',"opacity":"0.8","margin-top":-$("#switch_btn").height()/2});// 添加当前元素的样式
+ })
+	//Verification code
+	 
+function Prompt_click(){
+ layer.open({
+		title:['验证码', 'background-color: #f0f0f0; color:#333333; height:50px; line-height:50px; '],
+		style: 'background-color:#ffffff; color:#333333; border:none; font-size:22px',
+		content:'	<div class="prompt-content mb3"><input type="text" name="verification"  placeholder="验证码" class="verification-text" id="verification"/><h5 class="prompt_xinx"></h5></div><div class="button-operation btn-one clearfix"><a  href="#" onclick="user_Prompt()"  class="btn btn-confirm">确认</a></div>',
+		 success: function(layero,index){   
+				$('.layui-m-layerchild').append('<div class="share_close uertification_close" onclick="uertificationx()"><i class="iconfont icon-quxiao" style="color:#333333"></i></div>'); 
+			  $("#Prompt").css("display","block");
+			 if($.cookie("verification")!=null){$("#verification").val( $.cookie("123456")||$.cookie("111111"));	}
+			} 
+	});	
+       Certification();	
+}
+	function uertificationx(event){
+		layer.closeAll();
+	   $("#Prompt").css("display","block");
+	}
+	 function Paybtn(url){
+	 		layer.open({
+			title:['確認', 'background-color: #f0f0f0; color:#333333; height:50px; line-height:50px; text-align:left'],
+			style: 'background-color:#ffffff; color:#333333; border:none; font-size:20px;',
+			content:'	<div class="prompt-content mb3">お会計でよろしいでしょうか？</h5></div><div class="button-operation clearfix"><a  href="'+url+'" onclick="layer.closeAll();"  class="btn btn-confirm">はい</a><a  href="javascript:" onclick="layer.closeAll();"  class="btn btn-close">いいえ</a></div>',
+			
+			 success: function(layero,index){    
+                    $('.layui-m-layerchild').append('<div class="share_close" onclick="layer.closeAll();"><i class="iconfont icon-quxiao" style="color:#333333"></i></div>');  
+               } ,
+		});
+ }
+function qita(){
+		layer.open({
+      content:'開通していない機能',
+		style: 'background-color:#ffffff; color:#333333; border:none;',
+		time: 3,
+		 success: function(){
+			 $(".layui-m-layercont").css({"padding":"20px"})
+		 }
+})	
+}
+//----------------------------------
+	$(function(){	
+	//Set up plus or minus shopping cart into
+		$(".add").click(function(){	   
+			var totalBtn1 = 0
+		var t=$(this).parent().find('input[class*=result]'); 
+		t.val(parseInt(t.val())+1);
+			if(parseInt(t.val())>0){
+			$(this).parent().find("em").css("color","#000000");
+			}
+			var img = $(this).parent().parent().parent().parent().find('img');
+			var btn = $(this).attr('class');
+			var flyImg = img.clone().css({
+				'opacity':'0.6'
+			});
+			$('.product-list ').append(flyImg);
+		
+				flyImg.css({
+				'z-index':9999,
+				'border':'3px solid #fff',
+				'position': 'absolute',
+				'height' : img.height() + 'px',
+				'width' : img.width() + 'px',
+				'top' :img.offset().top +'px',
+				'left' : img.offset().left+'px'
+			})
+			flyImg.animate({
+				'width' : 30 + 'px',
+				'height' : 30 + 'px',
+				'border-radius' : 100 + '%'
+			},function(){
+				var t;
+				if (btn == 'add'){
+					t = $('.cart').offset().top + 'px';
+				    l = $('.cart').offset().left +$('.cart').offset().left/2 +'px';
+					totalBtn1 ++;
+					if(totalBtn1>99){
+						totalBtn1 = 99
+					}
+				}
+				flyImg.animate({
+					'top':t,
+					'left':l,
+					'height':0 +'px',
+					'width' :0+'px',
+				},500,function(){
+					flyImg.remove();
+					$('.cart-mark').css("display","block");
+			
+				})
+			});
+		setTotal(); 
+		})
+		$(".minus").click(function(){ 
+		var t=$(this).parent().find('input[class*=result]'); 
+		t.val(parseInt(t.val())-1);
+		if(parseInt(t.val())<=0){ 
+		t.val(0); 
+		$(this).find("em").css("color","#b9b9b9");
+		} 
+		setTotal(); 
+		})
+		function setTotal(){ 
+		var s=0;
+		$(".Quantity").each(function(){ 
+		s+=parseInt($(this).find('input[class*=result]').val()); 
+		});
+		if(s>0){
+		$(".cart-mark").show();		
+		}else{
+		$(".cart-mark").hide();		
+		}
+		}
+		setTotal();
+});
+	//share
+ function share(){
+	 layer.open({
+      type: 1,
+      title: ['シェア','background-color: #000000; color:#fff; border-radius:0px; height:50px; line-height:50px'], 
+      content:'<div class="share_style"><ul class="clearfix"><li><i class="iconfont icon-facebook2 "></i><h4>facebook</h4></li><li><i class="iconfont icon-twitter2"></i><h4>twitter</h4></li><li><i class="iconfont icon-big-WeChat"></i><h4>WeChat</h4></li></ul></div>',
+     anim: 'up',
+     style: 'position:fixed; bottom:0; left:0; width: 100%; height: 200px;  border:none;',
+     success: function(layero,index){    
+               $('.layui-m-layerchild').append('<div class="share_close" onclick="layer.closeAll();"><i class="iconfont icon-quxiao"></i></div>');    
+       } 
+  });	 
+ }
+//
+	function product_detailed(index,id){
+		layer.open({
+          type: 1,
+ 		  shade: 0.5, 
+		  closeBtn: 0,
+          fix:false,
+           move:false,moveOut:true,
+		  anim: 'up',
+		  content:'',
+		  style: 'position:fixed;left:0; width:100%;border: none; z-index:1111;    -webkit-animation-duration: .5s; animation-duration: .5s;overflow-y: scroll ',
+		//  shade: false,
+		  success: function(layero,index){
+				var htmls="";
+               $('.layui-m-layerchild').append('<div class="detailed_close" onclick="layer.closeAll();"><i class="iconfont icon-quxiao"></i></div>');   
+				htmls+='<div class="detailed" id="detailed"><div id="detailed_style">';
+				htmls+='<div id="focus" class="focus"><div class="hd"><ul></ul></div><div class="bd"><ul><li><a href="#"><img _src="images/p-3.jpg" src="images/blank.png" /></a></li><li><a href="#"><img _src="images/p-2.jpg" src="images/blank.png"/></a></li><li><a href="#"><img _src="images/p-1.jpg" src="images/blank.png"/></a></li></ul></div></div><script type="text/javascript">TouchSlide({ slideCell:"#focus",titCell:".hd ul", mainCell:".bd ul", effect:"left", autoPlay:false,autoPage:true, switchLoad:"_src" });<\/script>';//AD
+				htmls+='<div class="lable-style"><lable class="lable-name">中辛</lable></div><div class="title_name">鹌鹑大蒜腌渍腌制</div><div class="relative"><h3 class="price">¥<b>450</b>円(税込)</h3><div class="Quantity"><button class="minus" style="display: inline-block;"><em class="iconfont icon-jianqu" style="font-size:26px"></em></button><input type="text" class="result" value="0" disabled="false"><button class="add"><em class="iconfont icon-jia1"></em> </button> </div></div>';
+			     htmls+='<div class="Introduction"><h4 class="title_name">介绍<h4><div class="content">龚宝鸡是着名的中外传统名菜。 山东菜，川菜，贵州菜，原料，风俗都不同。 [1]这道菜的由来与贵州菜的辛辣鸡有关，山东菜酱鸡改良了贵州菜的辛辣鸡，后来山东省省长和四川省丁堡省省长。 传播，这道菜也被概括为北京菜肴的法庭[2]。 宫保鸡还传播到海外<div><div>';
+				htmls+='</div></div>';
+				$(".layui-m-layercont").append(htmls);
+				$('#detailed').css('height',$(window).height()-$(".herder-style").height()-10);
+				Certification(); //Judgment verification;
+			    $("#detailed").niceScroll({  
+	cursorcolor:"#888888",  
+	cursoropacitymax:1,  
+	touchbehavior:false,  
+	cursorwidth:"1px",  
+	cursorborder:"0",  
+	cursorborderradius:"1px"  
+});
+       } 
+	});
+	$('.layui-m-anim-up').css({'height':$(window).height()-$(".herder-style").height(), 'top':$(".herder-style").height()}); 
+}
+/*****************************Verify user login status***********************************/
+function user_Prompt(){ 
+     var digital=$("input[name='verification']").val();
+	 if(digital==""){
+		  $(".prompt_xinx").html("認証コードを入力してください！").css({"display":"block"});  
+	 }	
+	 if(digital!=""){
+		 if(digital!="123456" && digital!="111111"){
+			$(".prompt_xinx").html("認証コードが不正です！").css({"display":"block"});   
+		 }
+	 }
+	 if(digital=='123456'){
+	//	 $.cookie('verification')
+		 $("#Prompt").remove();
+		 $(document).find('.Quantity button').removeAttr('disabled');
+	     $(document).find('.Quantity').removeAttr('onclick', '');
+		 $(document).find('.herder-menu li .Cerfloor').remove();
+		 $(document).find('.herder-menu .order a').attr("href","Order1.html");
+		 $(document).find("body").append("<div class='prompt_name'><b>幹事になりましたので、カート追加、註文＆会計ができます。</b></div>")	 
+		 setTimeout(function(){$(layer.closeAll());$(".prompt_name").animate({"bottom":"-150px"},500).remove()},5000);
+		 		  $(document).find('.prompt_name').animate({"bottom":"0"},500);
+		 $(document).find(".user .name").html("幹事端末");
+		 $(document).find('.herder-menu li a').css({"color":"#333333"})	;
+
+		      $.cookie("123456", $("#verification").val(), {
+                    path: "/", expires: 1
+                });
+		 layer.closeAll()
+	 }
+	
+	 if(digital=='111111'){
+		 $("#Prompt").remove();
+		 $(document).find('.Quantity button').removeAttr('disabled');
+	     $(document).find('.Quantity').removeAttr('onclick', '');
+		 $(document).find('.herder-menu li .Cerfloor').remove();
+		 $(document).find("body").append("<div class='prompt_name'><b>参加者になりました。カート追加ができますが、註文＆会計ができません。</b></div>");
+		 $(document).find('.herder-menu li a').css({"color":"#333333"});
+		  $(document).find('.prompt_name').animate({"bottom":"0"},500);
+		 setTimeout(function(){$(layer.closeAll());$(".prompt_name").animate({"bottom":"-150px"},500).remove()}, 5000); 
+		  $(document).find(".user .name").html("参加者端末");
+		 $.cookie("111111", $("#verification").val(), {
+                    path: "/", expires: 1
+                });
+		 layer.closeAll()
+	 }
+	 else{
+		// alert(true);
+	 }
+ }
+	function  Certification(){
+	   $(document).find('.Quantity button').attr('disabled', 'true');
+	   $(document).find('.Quantity').attr('onclick', 'uertificationx()');
+	   $(document).find('.herder-menu li').append("<em class='Cerfloor'></em>");
+	   $(document).find('.herder-menu li a').css({"color":"#bbbbbb"});
+	    var name= ($.cookie('123456')||$.cookie('111111'));
+	
+			 var digital=$(document).find("body input[name='verification']").val();	
+			 if($.cookie('123456')||$.cookie('111111')){
+			 $("#Prompt").remove();
+		      $(document).find('.Quantity button').removeAttr('disabled');
+	         $(document).find('.Quantity').removeAttr('onclick', '');
+		     $(document).find('.herder-menu li .Cerfloor').remove();
+		      $(document).find('.herder-menu li a').css({"color":"#333333"});
+			 } 
+	 }
+  Certification();
+</script>
